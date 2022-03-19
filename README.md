@@ -1,2 +1,2 @@
 # resume
-Katherine Shen's resume
+Katherine Shen's Resume

@@ -1,4 +1,4 @@
-\documentclass[letter,10pt]{extarticle}
+\documentclass[letter,11pt]{extarticle}
 \usepackage{geometry}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -68,6 +68,15 @@
 		\end{tabular*}\vspace{-3pt}
 }
 
+\newcommand{\resumeSubheadingSix}[6]{
+	\vspace{-1pt}\item
+		\begin{tabular*}{1\linewidth}{l@{\extracolsep{\fill}}r}
+			\textbf{#1} & #2 \\
+			\textit{#3} & \textit{#4} \\[2mm]
+            \textit{#5} & \textit{#6} \\
+		\end{tabular*}\vspace{-3pt}
+}
+
 
 \newcommand{\resumeSubItem}[2]{\resumeSkillItem{#1}{#2}\vspace{-5pt}}
 
@@ -99,19 +108,30 @@
 	\resumeSubHeadingListStart
 		\resumeSubheading
 			{Georgia Institute of Technology}{Atlanta, GA}
-			{Bachelor's of Science in Computer Science, GPA: 3.62}
-            {Aug 2020 -- May 2024}
+			{Master's of Science in Computer Science -- Human-Computer Interaction}
+            {Aug 2024 -- May 2025}
 			\vspace{-3pt}
-			{\scriptsize { \footnotesize{\newline{}\textbf{Concentration:}
+			{}
+			{}
+    	\resumeSubheading
+			{Georgia Institute of Technology}{Atlanta, GA}
+            {Bachelor's of Science in Computer Science, GPA: 3.62}
+            {Aug 2020 -- May 2024}
+            \vspace{-3pt}
+            {\scriptsize { \footnotesize{\newline{}\textbf{Concentration:}
                 Graphics \& Networking
 			}}}
 			{\scriptsize { \footnotesize{\newline{}\textbf{Courses:}
                 \textit{Information Security},
                 \textit{Information Visualization}, 
-                Systems and Networks, Databases,
-                Algorithm Design, Computer Graphics,
-                Computer Architecture, Applied Combinatorics, Linear Algebra,
-                Data Structures \& Algorithms, Object-Orientated Programming
+                Systems and Networks, 
+                Databases,
+                Algorithm Design,
+                \hspace{\linewidth} \hspace*{41pt}
+                Computer Graphics,
+                Computer Architecture, 
+                Linear Algebra,
+                Data Structures \& Algorithms
 			}}}
 	\resumeSubHeadingListEnd
 
@@ -119,14 +139,14 @@
 	\resumeSubHeadingListStart
         \resumeSubheading
             {Amazon Web Services}
-            {East Palo Alto, CA}
+            {San Francisco  , CA}
             {Software Development Intern - OpenSearch Ingestion}
             {May 2023 -- Aug 2023}
             \resumeItemListStart
                 \resumeItem{Improved data ingestion tool's capabilities to enrich and transform
                 data by increasing data processing functionality}
                 \resumeItem{Enhanced customer ability to collect observability data
-                by developing new configurations for the key-value processor}
+                by expanding configurations for the key-value processor}
                 \resumeItem{Implemented user options to include or exclude key-value pairs,
                 mutate values, and recursively parse input data}
             \resumeItemListEnd
@@ -137,42 +157,23 @@
             {Getting to Know U - Provost Data Dashboard Design}
             {Aug 2022 -- Present}
         \resumeItemListStart
-            \resumeItem{Analyzed Georgia Tech population distribution
-            across different majors, credit hours, graduation rates, and more}
-            \resumeItem{Iterated and improved pre-existing dashboard designs
-            in the provost system}
-            \resumeItem{Performed UX audits and built design systems to
-            create dashboards for new datasets}
-            \resumeItem{Led the React subteam to successfully transition
-            high fidelity wireframes into a webapp and implement user-friendly features}
-        \resumeItemListEnd
-
-        \resumeSubheading
-            {Georgia Tech Research Institute}
-            {Atlanta, GA}
-            {Research Assistant}
-            {Aug 2022 -- May 2023}
-        \resumeItemListStart
-            \resumeItem{Transitioned emergency procedure manual iPad application
-            to React webpage with newer features}
-            \resumeItem{Developed Python script to parse styling information
-            from Excel sheet database in order to render on webpage}
-            \resumeItem{Enhanced user experience by adding features to allow
-                for adding, removing, and editing of emergency manuals}
+            \resumeItem{Led subteam for large scale project to provide student body with information on classes, majors, clubs, etc.}
+            \resumeItem{Managed and conducted code reviews for 8 engineers transitioning
+                design wireframes to a user-friendly webapp}
+            \resumeItem{Standardized design systems after rigorous UX audit of existing dashboard designs for future dataset visualization}
         \resumeItemListEnd
 
         \resumeSubheading
             {Georgia Tech Research Institute}
             {Atlanta, GA}
             {Research Software Engineering Intern}
-            {May 2022 -- Jul 2022}
+            {May 2022 -- May 2023}
         \resumeItemListStart
-            \resumeItem{Assisted in identifying issues with user-uploaded ML
-                models by developing an error analysis visualization tool}
-            \resumeItem{Iterated continuously on various dashboard designs and
-                visualizations to maximize user experience with React}
-            \resumeItem{Designed data architecture to allow seamless
-                communication with database in Flask and pandas}
+            \resumeItem{Spearheaded development of AI model visualization tool using React, Python, and custom data architecture}
+            \resumeItem{Transitioned emergency procedure manual iPad application
+            to React webpage with improved user experience}
+            \resumeItem{Developed Python script to parse styling information
+            from Excel sheet database in order to render on webpage}
         \resumeItemListEnd
 
         \resumeSubheading
@@ -183,8 +184,6 @@
         \resumeItemListStart
             \resumeItem{Reduced average time for locating parking spot on APL
                 campus with OpenCV and image recognition}
-            \resumeItem{Dispatched analyzed parking spot data to drivers
-                gathered through mobile app}
             \resumeItem{Experimented with relationships between emotional
                 context and television subtitles using NLP techniques}
             \resumeItem{Developed lost device tracking system with Raspberry
@@ -200,9 +199,7 @@
             {Advisor, Vice President, Creative Department Head}
             {Sep 2020 -- May 2023}
         \resumeItemListStart
-            \resumeItem{Restructured organization by interviewing/onboarding new
-                staff and creating new procedures}
-            \resumeItem{Boosted and promoted member engagement by leading
+            \resumeItem{Boosted member engagement by leading
             initiatives to increase organization activity and school presence}
             \resumeItem{Led creative team to create a website, social
                 media graphics, and game-specific designs}
@@ -219,14 +216,12 @@
             {Python, Websockets, Event Handling, REST APIs}
             {}
             \resumeItemListStart
-                \resumeItem{Provided quick tournament lookup information for
-                    regional and global events through Discord bot}
-                \resumeItem{Consumed Riot Games Esports API to get accurate, live
-                    tournament information}
-                \resumeItem{Utilized formatting algorithms with data structures to
-                    display information sent to Discord using \texttt{discord.py}}
+                \resumeItem{Provided quick esports tournament lookup information for
+                    regional and global events through chat bot}
                 \resumeItem{Developed a scheduler to deliver notifications with
                     a stream link for upcoming matches for ease of viewing}
+                \resumeItem{Integrated with database to persist enduser team preferences, 
+                    configurations, and enabled notifications}
             \resumeItemListEnd
 
         % \resumeProjectHeading
